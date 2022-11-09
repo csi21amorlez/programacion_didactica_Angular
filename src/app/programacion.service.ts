@@ -2,7 +2,7 @@
 
 import { Injectable } from '@angular/core';
 import { Tema } from './tema';
-import { TEMAS } from './datos/mock_programa';
+import { TEMAS } from './datos/mock_temas';
 
 @Injectable({
   providedIn: 'root'

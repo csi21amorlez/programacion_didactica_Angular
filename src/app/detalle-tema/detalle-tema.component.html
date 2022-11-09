@@ -1,1 +1,16 @@
-<p>detalle-tema works!</p>
+<div class="card" *ngIf="temaActual">
+  <div class="card-header">
+    {{temaActual.tema}}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{temaActual.tema}}-{{temaActual.titulo}}</h5>
+  </div>
+  <ul class="list-group">
+    <li class="list-item" *ngFor="let objetivo of temaActual.objetivos">
+      {{objetivo}}
+    </li>
+  </ul>
+  <div>
+    <button (click)="goBack()" class=""></button>
+  </div>
+</div>

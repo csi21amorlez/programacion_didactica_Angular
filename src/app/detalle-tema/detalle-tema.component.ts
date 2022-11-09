@@ -18,5 +18,7 @@ export class DetalleTemaComponent implements OnInit {
     private location: Location
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.temaActual = this.servDetalleTemas.getDetalleTema(this.temaActual.tema)
+  }
 }
