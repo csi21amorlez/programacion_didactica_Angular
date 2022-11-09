@@ -1,0 +1,9 @@
+<div class="container border">
+  <ul class="">
+    <li class="" *ngFor="let tema of temas">
+      <button class="btn btn-primary" routerLink="/detalle/{{tema.tema}}">
+        {{tema.tema}} - {{tema.titulo}}
+      </button>
+    </li>
+  </ul>
+</div>
